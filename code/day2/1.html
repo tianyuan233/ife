@@ -10,49 +10,98 @@
     <title>Firlst HTML</title>
     <style>
         html {
-  font-family:Arial,Verdana,Sans-serif
-}
-h1 {
-    font-size: 32px;
-    text-align: center;
-}
-h2 {
-  background: skyblue;
-  text-shadow: 4px 4px 5px yellowgreen;
-}
-h3 {
-  font-weight: bold;
-}
-body {
-   width: 700px;
-   margin-right: auto;
-   margin-left: auto;
-}
-li, p {
-  line-height: 1.5;
-}
-div p {
-    color: orange;
-    font-family: "Trebuchet MS", Verdana, sans-serif;
-    text-indent: 1cm;
-}
-a {
-  text-decoration: line-through
-}
-.job {
-  font-weight: bold;
-  font-style:oblique
-}
+            font-family: Arial, Verdana, Sans-serif;
+            line-height: 200%
+        }
+
+        body {
+            width: 700px;
+            margin-right: auto;
+            margin-left: auto;
+            border-style: solid;
+            background-color: gainsboro;
+        }
+
+        }
+
+        h1 {
+            font-size: 32px;
+            text-align: center;
+        }
+
+        h2 {
+            padding-left: 5px;
+            background: skyblue;
+            text-shadow: 4px 4px 5px rgb(92, 137, 155);
+        }
+
+        h3 {
+            font-weight: bold;
+        }
+
+        .project > p {
+            line-height: 1.5;
+            color: orange;
+            text-indent: 1cm;
+            margin-top: 0px;
+        }
+
+        .project > h3 {
+            margin: 5px;
+        }
+
+        p {
+            font-family: "Trebuchet MS", Verdana, sans-serif; 
+        }
+
+        a {
+            margin: 20px;
+        }
+
+        a:link {
+            color: black;
+            text-decoration: none;
+        }
+
+        /* 未被访问的链接 */
+
+        a:visited {
+            color: #00FF00;
+        }
+
+        /* 已被访问的链接 */
+
+        a:hover {
+            color: gray;
+            font-size: 150%;
+        }
+
+        /* 鼠标指针移动到链接上 */
+
+        .job {
+            font-weight: bold;
+            font-style: oblique
+        }
+
+        .project {
+            margin: 4px;
+            border-style: solid;
+            border-color: gray;
+        }
+
+        ul {
+            list-style-position: outside
+        }
     </style>
 </head>
 
 <body>
-    <h1 align="center">简历</h1>
+    <h1 align="center">简 历</h1>
     <div>
         <hr>
         <h2>个人信息</h2>
-        <h3>XXX</h3>
-        <h4>期望职位：XXX</h4>
+        <p>XXX</p>
+        <p>期望职位：XXX</p>
     </div>
     <div>
         <hr>
@@ -62,30 +111,30 @@ a {
             <li>xxxxxxxxxxxx</li>
         </ul>
     </div>
-    
+
     <div>
         <hr>
         <h2>项目经历</h2>
-        <div>
+        <div class="project">
             <h3>xxx</h3>
             <time>2018年7月21日</time> ~
             <time>2018年7月21日</time>
             <p>收到回复可视电话疯狂世界很疯狂十分的水电开发和深刻鉴定会付款计划收到付款还是看等级划分空间的身份似的发射点发射点发生</p>
         </div>
-        <div>
+        <div class="project">
             <h3>xxx</h3>
             <time>2018年7月21日</time> ~
             <time>2018年7月21日</time>
             <p>收到回复可视电话疯狂世界很疯狂十分的水电开发和深刻鉴定会付款计划收到付款还是看等级划分空间的身份似的发射点发射点发生</p>
         </div>
-        <div>
+        <div class="project">
             <h3>xxx</h3>
             <time>2018年7月21日</time> ~
             <time>2018年7月21日</time>
             <p>收到回复可视电话疯狂世界很疯狂十分的水电开发和深刻鉴定会付款计划收到付款还是看等级划分空间的身份似的发射点发射点发生</p>
         </div>
     </div>
-    <div >
+    <div>
         <hr>
         <h2>个人评价</h2>
 
